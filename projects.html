@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-page="projects">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects page for Tesfalem Mathewos." />
+  <meta name="theme-color" content="#161616" />
+  <title>Projects | Tesfalem Mathewos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html"><span class="brand-mark">TM</span><span class="brand-text"><strong>Tesfalem Mathewos</strong><span>Computer Science Graduate</span></span></a>
+      <button class="icon-button mobile-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="about.html">About Me</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="education.html">Education</a><a href="resume.html">Resume</a><a href="contact.html">Contact Me</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false"><span class="theme-icon theme-sun" aria-hidden="true">Sun</span><span class="theme-icon theme-moon" aria-hidden="true">Moon</span></button>
+        <a class="button button-primary button-small" href="contact.html">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section page-hero">
+      <div class="container page-hero-grid">
+        <div class="split-decor reveal" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected project work from my portfolio</h2>
+          <p class="lead">I am highlighting the project I completed during my degree.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Featured Project</p>
+          <h2>Lost items management system</h2>
+          <p>This page currently highlights my final-year group project from Hawassa University. I am building the next project now and will add it here once it ships.</p>
+        </div>
+
+        <div class="projects-grid project-gallery">
+          <article class="project-card project-card--featured reveal" data-category="systems web">
+            <div class="project-media">
+              <img src="images/lims-project-screenshot.png" alt="LIMS Platform homepage with hero banner, Report Lost Item and Browse Items actions, and community recovery messaging" loading="lazy" width="1600" height="1000" />
+              <span class="project-badge">4-person team project</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-heading">
+                <h3>Lost Items Management System (LIMS)</h3>
+                <p class="project-pitch">Helps a campus community report, match, and recover lost belongings without relying on a manual, walk-in lost-and-found desk.</p>
+              </div>
+
+              <p class="project-overview">LIMS is a full-stack web platform built for my final-year Computer Science project at Hawassa University, where a paper-based lost-and-found process made it slow and unreliable to reunite people with their belongings. Users can report a lost or found item, search existing listings, and get flagged as a likely match when a report on the other side lines up. I led a small team and owned the backend: the MySQL data model, the matching logic, and the REST API that the React frontend runs on.</p>
+
+              <div class="project-block">
+                <p class="meta-label">Technologies</p>
+                <ul class="chip-row" aria-label="Technologies used in this project">
+                  <li class="chip">HTML</li>
+                  <li class="chip">CSS</li>
+                  <li class="chip">JavaScript</li>
+                  <li class="chip">React</li>
+                  <li class="chip">Node.js</li>
+                  <li class="chip">MySQL</li>
+                  <li class="chip">Git</li>
+                  <li class="chip">GitHub</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <p class="meta-label">Key features</p>
+                <ul class="feature-list">
+                  <li>Guided reporting flow for both lost and found items, with category, location, and photo details</li>
+                  <li>Keyword and category search across all open listings</li>
+                  <li>Matching logic that compares new reports against existing ones and surfaces likely pairs for review</li>
+                  <li>REST API (Node.js) connecting the React frontend to a normalized MySQL schema</li>
+                  <li>Role-based team workflow: I owned the backend and API contract while teammates built the frontend against it</li>
+                </ul>
+              </div>
+
+              <div class="project-insights">
+                <div class="project-insight">
+                  <p class="meta-label">The challenge</p>
+                  <p>The hard part was not the CRUD screens, it was the matching logic: designing a MySQL schema that could reliably pair a "lost" report with a "found" report without turning into a slow, manual review queue, while three teammates were building against my API at the same time.</p>
+                </div>
+                <div class="project-insight">
+                  <p class="meta-label">What I learned</p>
+                  <p>Agreeing on the API contract early — exact request and response shapes — mattered more than any single line of backend code. Once that was locked in, the React and backend halves of the project could move in parallel instead of blocking each other.</p>
+                </div>
+              </div>
+
+              <div class="meta-grid project-role">
+                <div class="meta-item"><span>My role</span><strong>Backend Developer &amp; Team Leader</strong></div>
+              </div>
+
+              <div class="project-actions">
+                <span class="button button-primary button-small is-disabled" aria-disabled="true" title="Not deployed yet — hosting this is next on my list">Live Demo — Coming Soon</span>
+                <!-- TODO: point this at the exact repo URL, e.g. https://github.com/fillet-tesf/lims-platform -->
+                <a class="button button-secondary button-small" href="https://github.com/fillet-tesf" target="_blank" rel="noopener noreferrer">View Source Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="scroll-top" type="button" aria-label="Scroll to top">^</button>
+  <footer class="footer"><div class="container footer-grid"><p>© <span id="year"></span> Tesfalem Mathewos. All rights reserved.</p><div class="footer-links"><a href="about.html">About</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></div></div></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+

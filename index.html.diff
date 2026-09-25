@@ -1,0 +1,76 @@
+--- "/home/claude/portfolio/My portfolio/index.html"	2026-08-04 12:26:11.000000000 +0000
++++ /home/claude/work/portfolio_edit/index.html	2026-08-05 09:09:08.413030796 +0000
+@@ -3,9 +3,9 @@
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-  <meta name="description" content="Tesfalem Mathewos - Computer Science graduate portfolio." />
++  <meta name="description" content="Tesfalem Mathewos - Software Developer and Computer Science graduate specializing in JavaScript, React, Node.js and MySQL. View projects and resume." />
+   <meta name="theme-color" content="#161616" />
+-  <title>Tesfalem Mathewos | Portfolio</title>
++  <title>Tesfalem Mathewos | Software Developer</title>
+   <link rel="stylesheet" href="css/style.css" />
+ </head>
+ <body>
+@@ -51,31 +51,39 @@
+     <section class="section page-hero">
+       <div class="container hero-grid">
+         <div class="hero-copy reveal">
+-          <p class="eyebrow">Hi, I am</p>
++          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Open to Software Developer roles</p>
+           <h1>Tesfalem Mathewos</h1>
+-          <p class="lead">Recent Computer Science graduate from Hawassa University, looking for my first Software Engineering opportunity.</p>
+-          <p class="intro">I recently completed a Bachelor of Science in Computer Science. My interests are Software Engineering and Cybersecurity, and I have hands-on experience with Java, JavaScript, C++, HTML, CSS, MySQL, Git, GitHub and on other tools and languages. I also completed an internship at the Commercial Bank of Ethiopia and a final-year project.</p>
+-          
+-          <div class="social-row" aria-label="Social links">
+-            <a class="social-pill" href="mailto:tesfalemmathewos20@gmail.com" aria-label="Email">M</a>
+-            <a class="social-pill" href="https://github.com/fillet-tesf" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)">GH</a>
+-            <a class="social-pill" href="https://www.linkedin.com/in/tesfalem-mathewos" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">in</a>
+-            <a class="social-pill" href="resume.html" aria-label="Resume">CV</a>
+-          </div>
++          <p class="lead">Software Developer who builds fast, accessible web applications&nbsp;— from React interfaces to MySQL-backed APIs.</p>
++          <p class="intro">BSc in Computer Science, Hawassa University. Interned at the Commercial Bank of Ethiopia building and testing production features, and led the backend team on a full-stack final-year project. Now looking for a full-time Software Developer role.</p>
++
++          <ul class="chip-row" aria-label="Core technologies">
++            <li class="chip">JavaScript</li>
++            <li class="chip">React</li>
++            <li class="chip">Node.js</li>
++            <li class="chip">Java</li>
++            <li class="chip">MySQL</li>
++            <li class="chip">Git</li>
++          </ul>
+ 
+           <div class="button-row">
+             <a class="button button-primary button-small" href="projects.html">View Projects</a>
+-            <a class="button button-secondary button-small" href="assets/Tesfalem-Mathewos-CV.pdf" download>Download CV</a>
++            <a class="button button-secondary button-small" href="assets/Tesfalem-Mathewos-CV.pdf" download>Download Resume</a>
++          </div>
++
++          <div class="social-row" aria-label="Social links">
++            <a class="social-pill" href="mailto:tesfalemmathewos20@gmail.com" aria-label="Email Tesfalem">@</a>
++            <a class="social-pill" href="https://github.com/fillet-tesf" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)">GH</a>
++            <a class="social-pill" href="https://www.linkedin.com/in/tesfalem-mathewos" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">in</a>
+           </div>
+ 
+           <dl class="hero-metrics" aria-label="Professional highlights">
+             <div><dt>Education</dt><dd>BSc Computer Science</dd></div>
+-            <div><dt>CGPA</dt><dd>3.42</dd></div>
+-            <div><dt>Interest</dt><dd>Software Engineering</dd></div>
++            <div><dt>CGPA</dt><dd>3.42 / 4.00</dd></div>
++            <div><dt>Focus</dt><dd>Full-Stack Web Dev</dd></div>
+           </dl>
+         </div>
+ 
+-        <aside class="hero-visual reveal" aria-label="Professional photo section">
++        <aside class="hero-visual reveal" aria-label="Professional photo">
+           <div class="portrait-stage">
+             <picture>
+               <source srcset="images/tesfalem-mathewos-photo.webp" type="image/webp" />
+@@ -90,6 +98,7 @@
+                 fetchpriority="high"
+               />
+             </picture>
++            <div class="portrait-scrim" aria-hidden="true"></div>
+             <div class="portrait-caption">
+               <span>Hawassa University graduate</span>
+             </div>

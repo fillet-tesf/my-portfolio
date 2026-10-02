@@ -163,7 +163,7 @@ updateScrollState();
 
 if (scrollTopButton) {
   scrollTopButton.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
   });
 }
 
@@ -191,8 +191,10 @@ if (contactForm) {
       return;
     }
 
-    setFeedback('Success: Your message is ready to send. Connect this form to a backend or email service to receive submissions.');
-    contactForm.reset();
+    const subject = encodeURIComponent(`Portfolio enquiry from ${name}`);
+    const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`);
+    setFeedback('Opening your email app. Review the draft there and send it to deliver your message.');
+    window.location.href = `mailto:tesfalemmathewos20@gmail.com?subject=${subject}&body=${body}`;
   });
 }
 

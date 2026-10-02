@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="60" y1="35" x2="585" y2="445" gradientUnits="userSpaceOnUse"><stop stop-color="#292929"/><stop offset="1" stop-color="#171717"/></linearGradient>
+    <linearGradient id="screen" x1="160" y1="105" x2="495" y2="340" gradientUnits="userSpaceOnUse"><stop stop-color="#303030"/><stop offset="1" stop-color="#202020"/></linearGradient>
+  </defs>
+  <rect x="12" y="12" width="616" height="456" rx="32" fill="url(#bg)" stroke="#454545"/>
+  <circle cx="526" cy="108" r="60" fill="#FF7A00" fill-opacity=".08"/>
+  <rect x="112" y="83" width="416" height="278" rx="20" fill="#121212" stroke="#555" stroke-width="3"/>
+  <rect x="128" y="99" width="384" height="246" rx="12" fill="url(#screen)"/>
+  <path d="M128 136h384" stroke="#505050" stroke-width="2"/>
+  <circle cx="151" cy="118" r="5" fill="#FF7A00"/><circle cx="169" cy="118" r="5" fill="#FF9A3D" fill-opacity=".72"/><circle cx="187" cy="118" r="5" fill="#F2F2F2" fill-opacity=".55"/>
+  <rect x="157" y="167" width="80" height="9" rx="4.5" fill="#FF9A3D"/>
+  <rect x="251" y="167" width="106" height="9" rx="4.5" fill="#F2F2F2" fill-opacity=".76"/>
+  <rect x="182" y="192" width="118" height="9" rx="4.5" fill="#F2F2F2" fill-opacity=".36"/>
+  <rect x="311" y="192" width="139" height="9" rx="4.5" fill="#FF7A00" fill-opacity=".78"/>
+  <rect x="182" y="217" width="90" height="9" rx="4.5" fill="#FF9A3D" fill-opacity=".8"/>
+  <rect x="283" y="217" width="161" height="9" rx="4.5" fill="#F2F2F2" fill-opacity=".38"/>
+  <rect x="157" y="242" width="130" height="9" rx="4.5" fill="#F2F2F2" fill-opacity=".32"/>
+  <rect x="298" y="242" width="99" height="9" rx="4.5" fill="#FF7A00" fill-opacity=".8"/>
+  <rect x="182" y="267" width="162" height="9" rx="4.5" fill="#F2F2F2" fill-opacity=".42"/>
+  <rect x="356" y="267" width="90" height="9" rx="4.5" fill="#FF9A3D" fill-opacity=".8"/>
+  <path d="m89 381 22-20h418l22 20c3 4 0 10-6 10H95c-6 0-9-6-6-10Z" fill="#353535" stroke="#555" stroke-width="2"/>
+  <rect x="280" y="369" width="80" height="7" rx="3.5" fill="#555"/>
+  <circle cx="486" cy="337" r="34" fill="#FF7A00" fill-opacity=".16" stroke="#FF7A00" stroke-opacity=".55" stroke-width="2"/>
+  <path d="m475 337 8 8 15-17" stroke="#FF9A3D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

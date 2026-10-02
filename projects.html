@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Projects page for Tesfalem Mathewos." />
+  <meta name="description" content="Explore Tesfalem Mathewos's Lost Items Management System project, including its React frontend, Node.js API, MySQL data model, and his backend team role." />
   <meta name="theme-color" content="#161616" />
   <title>Projects | Tesfalem Mathewos</title>
   <link rel="stylesheet" href="css/style.css" />
@@ -12,7 +12,7 @@
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="container nav-shell">
-      <a class="brand" href="index.html"><span class="brand-mark">TM</span><span class="brand-text"><strong>Tesfalem Mathewos</strong><span>Computer Science Graduate</span></span></a>
+      <a class="brand" href="index.html"><img class="brand-mark" src="images/tesfalem-mathewos-photo.jpg" alt="Tesfalem Mathewos" width="46" height="46" loading="eager" decoding="async" /><span class="brand-text"><strong>Tesfalem Mathewos</strong><span>Computer Science Graduate</span></span></a>
       <button class="icon-button mobile-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button>
       <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
         <a href="index.html">Home</a><a href="about.html">About Me</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="education.html">Education</a><a href="resume.html">Resume</a><a href="contact.html">Contact Me</a>
@@ -30,8 +30,8 @@
         <div class="split-decor reveal" aria-hidden="true"></div>
         <div class="hero-copy reveal">
           <p class="eyebrow">Projects</p>
-          <h2>Selected project work from my portfolio</h2>
-          <p class="lead">I am highlighting the project I completed during my degree.</p>
+          <h1>Selected project works from my portfolio</h1>
+          
         </div>
       </div>
     </section>
@@ -39,16 +39,16 @@
     <section class="section">
       <div class="container">
         <div class="section-heading centered reveal">
-          <p class="eyebrow">Featured Project</p>
-          <h2>Lost items management system</h2>
-          <p>This page currently highlights my final-year group project from Hawassa University. I am building the next project now and will add it here once it ships.</p>
+          <p class="eyebrow">Featured projects</p>
+          <h2>Lost Items Management System</h2>
+          <p>This final-year group project was completed at Hawassa University by a five-person team.</p>
         </div>
 
         <div class="projects-grid project-gallery">
           <article class="project-card project-card--featured reveal" data-category="systems web">
             <div class="project-media">
               <img src="images/lims-project-screenshot.png" alt="LIMS Platform homepage with hero banner, Report Lost Item and Browse Items actions, and community recovery messaging" loading="lazy" width="1600" height="1000" />
-              <span class="project-badge">4-person team project</span>
+              <span class="project-badge">5-person team project</span>
             </div>
 
             <div class="project-body">
@@ -57,7 +57,7 @@
                 <p class="project-pitch">Helps a campus community report, match, and recover lost belongings without relying on a manual, walk-in lost-and-found desk.</p>
               </div>
 
-              <p class="project-overview">LIMS is a full-stack web platform built for my final-year Computer Science project at Hawassa University, where a paper-based lost-and-found process made it slow and unreliable to reunite people with their belongings. Users can report a lost or found item, search existing listings, and get flagged as a likely match when a report on the other side lines up. I led a small team and owned the backend: the MySQL data model, the matching logic, and the REST API that the React frontend runs on.</p>
+              <p class="project-overview">LIMS is a full-stack lost-and-found platform developed for my final-year Computer Science project at Hawassa University. It lets campus users report lost or found items, search listings, and review potential matches. I led the backend work, including the MySQL data model, matching logic, and REST API for the React frontend.</p>
 
               <div class="project-block">
                 <p class="meta-label">Technologies</p>
@@ -87,11 +87,11 @@
               <div class="project-insights">
                 <div class="project-insight">
                   <p class="meta-label">The challenge</p>
-                  <p>The hard part was not the CRUD screens, it was the matching logic: designing a MySQL schema that could reliably pair a "lost" report with a "found" report without turning into a slow, manual review queue, while three teammates were building against my API at the same time.</p>
+                  <p>The main challenge was designing the MySQL schema and matching logic to pair lost reports with found reports reliably, while four teammates built against my API.</p>
                 </div>
                 <div class="project-insight">
                   <p class="meta-label">What I learned</p>
-                  <p>Agreeing on the API contract early — exact request and response shapes — mattered more than any single line of backend code. Once that was locked in, the React and backend halves of the project could move in parallel instead of blocking each other.</p>
+                  <p>Defining the API request and response shapes early allowed the React frontend and backend to progress in parallel.</p>
                 </div>
               </div>
 
@@ -100,7 +100,7 @@
               </div>
 
               <div class="project-actions">
-                <span class="button button-primary button-small is-disabled" aria-disabled="true" title="Not deployed yet — hosting this is next on my list">Live Demo — Coming Soon</span>
+                <a class="button button-primary button-small" href="https://lost-items-management-system-production-38eb.up.railway.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
                 <!-- TODO: point this at the exact repo URL, e.g. https://github.com/fillet-tesf/lims-platform -->
                 <a class="button button-secondary button-small" href="https://github.com/fillet-tesf" target="_blank" rel="noopener noreferrer">View Source Code</a>
               </div>

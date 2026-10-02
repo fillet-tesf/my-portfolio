@@ -177,6 +177,8 @@ textarea:focus-visible,
 .site-nav {
   position: fixed;
   inset: 4.9rem 1rem auto;
+  max-height: calc(100vh - 6rem);
+  max-height: calc(100dvh - 6rem);
   display: grid;
   gap: 0.25rem;
   padding: 0.85rem;
@@ -188,6 +190,8 @@ textarea:focus-visible,
   visibility: hidden;
   transform: translateY(-1rem);
   pointer-events: none;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
 }
 
@@ -939,6 +943,14 @@ html[data-page="about"] .lead {
   box-shadow: var(--shadow);
 }
 
+.page-illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
 .section-heading.centered {
   text-align: center;
   margin-inline: auto;
@@ -1209,5 +1221,20 @@ html[data-page="about"] .lead {
 @media (min-width: 620px) {
   .project-insights {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }
